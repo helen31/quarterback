@@ -55,26 +55,161 @@ html, body{
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 .container{}
 .container__content{
     width: 1139px;
     margin: 0 auto;
     border: 1px solid red;
 }
+.content__header{}
+.header{
+    text-align: left;
+}
+.header__title{
+    text-transform: capitalize;
+}
 
+.content__profile{}
+.profile{
 
-.challenge__data{}
-.data{}
-.data__item{
-    display: table;
-    width: 100%;
+}
+.profile__menu{}
+.menu{
+    text-align: right;
+    padding: 0;
+}
+.menu__item{
+    list-style-type: none;
+    display: inline-block;
+}
+.menu__btn{
+    text-transform: capitalize;
+
+}
+.profile__info{}
+.info, .level{
+    text-align: center;
+}
+.info__img{
+    display: inline-block;
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+}
+.info__description{
+    text-transform: capitalize;
+}
+.info__description span{
+    text-transform: uppercase;
+}
+
+.profile__level{}
+.level{
+    border: 1px solid green;
+}
+.level__number, .level__description{
+    display: inline-block;
+    vertical-align: middle; //todo if will be immage then remove
+}
+.level__description{
+    width: 400px;
+    border: 1px solid red;
+    height: 6px;
+    border-radius: 3px;
+}
+.content__challenge{}
+.challenge{}
+.challenge__title{
+    text-align: left ;
+}
+.challenge__overview{
+    margin-bottom: 10px; //todo maybe after remove it
+}
+.overview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.overview__item{
+    border: 1px solid grey;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+}
+.challenge__name{}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name__item{
+    display: flex;
+    flex-direction: row;
     border: 1px solid red;
     margin-bottom: 3px;
 }
-.data__cell{
-    display: table-cell;
+.name__cell{
+    border: 1px solid blue;
+    width: 33.3%;
+    text-align: center;
+
 }
-.data__description{}
-.data__qnt{}
-.data__coins{}
+.name__cell_left{
+    text-align: left;
+}
+.content__stats{}
+.stats{}
+.stats__title{
+    text-align: left;
+}
+.stats__list{
+
+}
+.list{
+
+}
+.stats__circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circle {
+    position: relative;
+    display: block;
+    margin: 2em 0;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+}
+.circle:after {
+    display: block;
+    padding-bottom: 80px;
+    width: 80px;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ddd;
+    content: "";
+}
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+.circle__wrapper {
+    display: table;
+    width: 80px;
+    height: 80px;
+}
+.circle__content {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.circle__description{
+    display: block;
+}
+
