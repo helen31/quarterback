@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--<style>-->
-        <!--@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');-->
-    <!--</style>-->
     <div class="container">
         <div class="container__content">
             <div class="content">
@@ -22,13 +19,13 @@
                         <nav class="profile__menu">
                             <ul class="menu">
                                 <li class="menu__item"><button type="button" class="menu__btn menu__btn_friends">friends</button></li>
-                                <li class="menu__item"><button type="button" class="menu__btn menu__btn_icon">...</button></li>
+                                <li class="menu__item"><button type="button" class="menu__btn menu__btn_icon"><img src="./images/menu4.png" alt="menu"></button></li>
                             </ul>
                         </nav>
                         <div class="profile__info">
                             <div class="info">
                                 <div class="info__img">
-                                    <img src="" alt="">
+                                    <img src="./images/photo.png" alt="photo">
                                 </div>
                                 <div class="info__description info__description_top">jonathan <span>la</span></div>
                                 <div class="info__description info__description_bottom">quarterback</div>
@@ -39,6 +36,7 @@
                                 <span class="level__number">level 3</span>
                                 <div class="level__description"></div>
                                 <span class="level__number">level 4</span>
+                                <div class="level__detail">You have <span>14xp</span> out of <span>26xp</span> needed for Level 4 </div>
                             </div>
                         </div>
                     </section>
@@ -50,28 +48,37 @@
                             <div class="overview">
                                 <div class="overview__item">
                                     <div class="item">
-                                        <div class="item__icon">icon</div>
+                                        <div class="item__icon">
+                                            <span class="helper"></span>
+                                            <img src="./images/overviev1.png" alt="icon">
+                                        </div>
                                         <div class="item__body">
                                             <span class="item__qnt">6</span>
-                                            <span class="item__description"></span>
+                                            <span class="item__description">Challenges</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="overview__item">
                                     <div class="item">
-                                        <div class="item__icon">icon</div>
+                                        <div class="item__icon">
+                                            <span class="helper"></span>
+                                            <img src="./images/overviev2.png" alt="icon">
+                                        </div>
                                         <div class="item__body">
-                                            <span class="item__qnt">62,350</span>
-                                            <span class="item__description"></span>
+                                            <span class="item__qnt"><img src="./images/coin.png" alt="coins">62,350</span>
+                                            <span class="item__description">Winnings</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="overview__item">
                                     <div class="item">
-                                        <div class="item__icon">icon</div>
+                                        <div class="item__icon">
+                                            <span class="helper"></span>
+                                            <img src="./images/overviev3.png" alt="icon">
+                                        </div>
                                         <div class="item__body">
                                             <span class="item__qnt">23012</span>
-                                            <span class="item__description"></span>
+                                            <span class="item__description">Rank</span>
                                         </div>
                                     </div>
                                 </div>
@@ -79,30 +86,30 @@
                         </div>
                         <div class="challenge__name">
                             <div class="name">
-                                <div class="name__item">
-                                    <div class="name__cell name__cell_left">challenge name</div>
-                                    <div class="name__cell">tournaments won</div>
-                                    <div class="name__cell">coints earned</div>
+                                <div class="name__item name__item_header">
+                                    <div class="name__cell name__cell_header name__cell_left">challenge name</div>
+                                    <div class="name__cell name__cell_header">tournaments won</div>
+                                    <div class="name__cell name__cell_header">coints earned</div>
                                 </div>
                                 <div class="name__item">
-                                    <div class="name__cell name__cell_left">max kills</div>
+                                    <div class="name__cell name__cell_left">Max Kills</div>
                                     <div class="name__cell">0</div>
-                                    <div class="name__cell">0</div>
+                                    <div class="name__cell"><img class="name__img" src="./images/coin2.png" alt="coin">0</div>
                                 </div>
                                 <div class="name__item">
-                                    <div class="name__cell name__cell_left">max kills</div>
-                                    <div class="name__cell">0</div>
-                                    <div class="name__cell">0</div>
+                                    <div class="name__cell name__cell_left">Max CS</div>
+                                    <div class="name__cell">1</div>
+                                    <div class="name__cell"><img class="name__img" src="./images/coin2.png" alt="coin">200</div>
                                 </div>
                                 <div class="name__item">
-                                    <div class="name__cell name__cell_left">max kills</div>
-                                    <div class="name__cell">0</div>
-                                    <div class="name__cell">0</div>
+                                    <div class="name__cell name__cell_left">Max Assists</div>
+                                    <div class="name__cell">4</div>
+                                    <div class="name__cell"><img class="name__img" src="./images/coin2.png" alt="coin">1,490</div>
                                 </div>
                                 <div class="name__item">
-                                    <div class="name__cell name__cell_left">max kills</div>
-                                    <div class="name__cell">0</div>
-                                    <div class="name__cell">0</div>
+                                    <div class="name__cell name__cell_left">Max KDA</div>
+                                    <div class="name__cell">4</div>
+                                    <div class="name__cell"><img class="name__img" src="./images/coin2.png" alt="coin">1,490</div>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +117,7 @@
                 </div>
                 <div class="content__stats">
                     <section class="stats">
-                        <div class="stats__title">player stats</div>
+                        <div class="stats__title">Player Stats</div>
                         <div class="stats__circle">
                             <div class="circle">
                                 <div class="circle__inner">
@@ -126,8 +133,8 @@
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
-                                            <span class="circle__description">822</span>
-                                            <span class="circle__description">kills</span>
+                                            <span class="circle__description">249</span>
+                                            <span class="circle__description">Deaths</span>
                                         </div>
                                     </div>
                                 </div>
@@ -136,8 +143,8 @@
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
-                                            <span class="circle__description">822</span>
-                                            <span class="circle__description">kills</span>
+                                            <span class="circle__description">590</span>
+                                            <span class="circle__description">Assists</span>
                                         </div>
                                     </div>
                                 </div>
@@ -146,8 +153,8 @@
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
-                                            <span class="circle__description">822</span>
-                                            <span class="circle__description">kills</span>
+                                            <span class="circle__description">3.4</span>
+                                            <span class="circle__description">KDA</span>
                                         </div>
                                     </div>
                                 </div>
@@ -156,8 +163,8 @@
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
-                                            <span class="circle__description">822</span>
-                                            <span class="circle__description">kills</span>
+                                            <span class="circle__description">12,245</span>
+                                            <span class="circle__description">CS</span>
                                         </div>
                                     </div>
                                 </div>

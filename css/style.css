@@ -48,8 +48,6 @@ html, body{
 *{
     box-sizing: border-box;
     outline: none;
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
 }
 
 body {
@@ -62,7 +60,8 @@ body {
 .container__content{
     width: 528px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*background: url("../images/screenshot_1.png");*/
+    /*opacity: 0.9;*/
 }
 .content__header{}
 .header{
@@ -73,50 +72,63 @@ body {
     font-family: Montserrat-Bold;
     font-size: 16px;
     color: #fff;
+    margin: 0;
+    padding: 36px 0 18px 25px;
 }
 
 .content__profile{}
 .profile{
+    background: url(../images/user-bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
 
 }
-.profile__menu{}
+.profile__menu{
+    position: absolute;
+    right: 0;
+}
 .menu{
     text-align: right;
-    padding: 0;
+    margin: 0;
+    padding-top: 17px;
 }
 .menu__item{
     list-style-type: none;
     display: inline-block;
+    vertical-align: top;
 }
 .menu-item:last-child{
-    margin-right: 4px; //doesnt work
+    margin-right: 4px;
 }
 .menu__btn{
     text-transform: capitalize;
     border: 2px solid #3b4550;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #222b35;
     color: #8694a3;
 }
 .menu__btn_friends{
     font-family: Montserrat-ExtraBold;
     font-size: 12px;
-    padding: 14px 12px 14px 11px;
+    padding: 9px 13px 9px 13px;
 }
 .menu__btn_icon{
-    font-family: 'Montserrat-SemiBold';
-    font-size: 24px;
-    padding: 11px 17px;
+    padding: 4px 10px 0px 10px
 }
 .profile__info{}
+.info{
+    padding-top: 41px;
+}
 .info, .level{
     text-align: center;
 }
 .info__img{
     display: inline-block;
-    border: 1px solid red;
-    width: 150px;
-    height: 150px;
+    border: 2px solid #464d54;
+    border-radius: 3px;
+    width: 114px;
+    height: 114px;
+
 }
 .info__description{
     text-transform: capitalize;
@@ -125,11 +137,13 @@ body {
     font-family: Montserrat-Bold;
     font-size: 20px;
     color: #fff;
+    margin-top: 10px;
 }
 .info__description_bottom{
     font-family: 'Montserrat-SemiBold';
     font-size: 14px;
     color: #c17810;
+    margin-top: 3px;
 }
 .info__description span{
     text-transform: uppercase;
@@ -137,86 +151,167 @@ body {
 
 .profile__level{}
 .level{
-    border: 1px solid green;
+    padding: 10px;
 }
+.level__number{
+    font-size: 12px;
+    font-family: 'Montserrat-SemiBold';
+    text-transform: capitalize;
+    color: #346f45;
+
+}
+.level__number:first-child{
+    color: #3cc843;
+    margin-right: 8px;
+}
+
 .level__number, .level__description{
     display: inline-block;
-    vertical-align: middle; //todo if will be immage then remove
+    vertical-align: middle;
 }
 .level__description{
     width: 341px;
-    /*border: 1px solid red;*/
     height: 4px;
     border-radius: 3px;
     background-color: #42bc48;
 }
+.level__detail{
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Montserrat-SemiBold';
+    margin-top: 6px;
+}
+.level__detail span{
+    font-size: 12px;
+    color: #3cc843;
+}
 .content__challenge{}
-.challenge{}
+.challenge{
+    padding: 3px 0;
+}
 .challenge__title{
     text-align: left ;
+    font-size: 12px;
+    font-family: 'Montserrat-Bold';
+    color: #4f5d6c;
+    text-transform: capitalize;
+    padding: 0 7px;
 }
-.challenge__overview{
-    margin-bottom: 10px; //todo maybe after remove it
-}
+.challenge__overview{}
 .overview{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 15px 0 0 0;
 }
-.overview__item{
-    border: 1px solid grey;
-}
+.overview__item{}
 .item{
     display: flex;
     flex-direction: row;
 }
 .item__icon{
     background-color: #2a3440;
+    vertical-align: middle;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0 16px;
+}
+.item__icon img{
+    vertical-align: middle;
+}
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 .item__body{
-    background-color: #222b35;
+    background-color: #212b35;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    justify-content: center;
+    padding: 8px 0px 8px 6px;
+    width: 107px;
+}
+.item__qnt{
+    font-size: 24px;
+    font-family: "Montserrat-Bold";
+    color: #fff;
+}
+.item__qnt img{
+    margin-right: 4px;
+}
+.item__description{
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'Montserrat-SemiBold';
+    color: #585e64;
 }
 .challenge__name{}
 .name{
     display: flex;
     flex-direction: column;
-    background-color: #222b35;
+    padding-top: 9px;
 }
 .name__item{
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    background-color: #212b35;
+}
+.name__item_header{
+    padding: 0;
+    background-color: inherit;
+    padding-bottom: 8px;
 }
 .name__cell{
-    border: 1px solid blue;
     width: 33.3%;
     text-align: center;
-
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat-SemiBold';
+    text-transform: capitalize;
+}
+.name__cell_header{
+    font-size: 10px;
+    font-family: 'Montserrat-Bold';
+    color: #545a61;
+    padding-left: 7px;
 }
 .name__cell_left{
     text-align: left;
+    width: 497px;
+}
+.name__img{
+    margin-right: 3px;
 }
 .content__stats{}
-.stats{}
+.stats{
+    padding: 13px 0;
+}
 .stats__title{
     text-align: left;
+    font-size: 12px;
+    font-family: 'Montserrat-Bold';
+    color: #4f5d6c;
+    text-transform: capitalize;
+    padding: 0 0 0 7px;
 }
-.stats__list{
-
-}
-.list{
-
-}
+.stats__list{}
+.list{}
 .stats__circle{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 17px;
 }
 .circle {
     position: relative;
     display: block;
-    margin: 2em 0;
     background-color: transparent;
     color: #222;
     text-align: center;
@@ -240,23 +335,23 @@ body {
 }
 .circle__wrapper {
     display: table;
-    width: 80px;
-    height: 80px;
+    width: 76px;
+    height: 76px;
 }
 .circle__content {
     display: table-cell;
-    padding: 1em;
     vertical-align: middle;
     font-size: 12px;
 }
 .circle__description{
     display: block;
+    text-transform: capitalize;
 }
 .circle__description:first-child{
     font-family: 'Montserrat-SemiBold';
     font-size: 14px;
     color: #fff;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 .circle__description:last-child{
     font-size: 12px;
